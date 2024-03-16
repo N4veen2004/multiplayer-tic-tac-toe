@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Ensure the container takes at least the full viewport height */
+  text-align: center;
+}
+
+.TicTacToe, .MainMenu, .JoinRoom {
+  background-color: gray;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: black 10px 10px;
+}
+
+.TTTContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1px; /* Adjust the gap as needed */
+  height: 300px;
+  width: 300px;
+  background-color: whitesmoke;
+}
+
+.TTTSquare {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  color: white;
+}
